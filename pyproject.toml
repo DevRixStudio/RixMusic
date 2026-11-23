@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rixmusic"
+version = "0.3.0"
+description = "Flat-file helper toolkit for Rubika music bots using Rubpy"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "RixMusic Contributors"}]
+dependencies = []
+
+[tool.setuptools]
+py-modules = [
+  "rixmusic", "rixmusic_core", "rixmusic_models", "rixmusic_queue",
+  "rixmusic_permissions", "rixmusic_downloader", "rixmusic_rubpy",
+  "rixmusic_voice", "rixmusic_media", "rixmusic_errors"
+]
